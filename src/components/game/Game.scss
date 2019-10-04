@@ -1,0 +1,10 @@
+.game {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .gameInProcess {
+    padding-top: 24px;
+    text-transform: uppercase;
+    color: #827e7e;
+  }
+}

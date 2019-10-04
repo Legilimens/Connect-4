@@ -1,0 +1,10 @@
+.curentPlayer {
+  text-transform: uppercase;
+  color: #FFF;
+  &.firstPlayer {
+    background: #5b5bec;
+  }
+  &.secondPlayer {
+    background: #f77171;
+  }
+}
