@@ -112,6 +112,9 @@ const init = async () => {
 			const { roomId, сolumnId, currentPlayer } = request.payload;
 			const game = gameList[roomId];
 
+			if(currentPlayer !== game.currentPlayer)
+				return game;
+
 			game.field[сolumnId].some((element, index) => {
 				if (element === 0 && game.winner === null) {
 					return game.field[сolumnId][index] = currentPlayer
